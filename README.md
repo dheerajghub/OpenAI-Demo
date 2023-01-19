@@ -4,7 +4,7 @@ In this project we will be exploring various models that Open AI provides , Imag
 
 To start with the project you need to create your own OpenAI apiKey see reference [here](https://beta.openai.com/login/).
 
-after creating you own apiKey you need to replace that key in the file name ``` AppLaunchController.swift ```
+after creating your own apiKey you need to replace that key in the file name ``` AppLaunchController.swift ```
 
 ``` swift
 class AppLaunchController: UIViewController {
