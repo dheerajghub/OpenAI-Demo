@@ -17,10 +17,10 @@ public class Networking: NSObject {
         self.configuration = _configuration
     }
     
-    func generateImageWithText(text: String, completionHandler: @escaping(ImageModelResponse) -> Void){
+    func generateImageWithText(text: String, numberOfImages: Int, imageSize: String, completionHandler: @escaping(ImageModelResponse) -> Void){
         
         let createImageURL = URL(string: Endpoint.createImage)
-        let request = ImageModelBody(prompt: text)
+        let request = ImageModelBody(prompt: text, n: numberOfImages, size: imageSize)
         
         do {
             let encodeRequest = try JSONEncoder().encode(request)

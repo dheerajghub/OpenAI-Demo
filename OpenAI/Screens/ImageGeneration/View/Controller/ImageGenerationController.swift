@@ -173,8 +173,8 @@ class ImageGenerationController: UIViewController {
                 self.resetToDefault()
                 
                 if response.error == nil {
-                    let vc = PreviewViewController()
-                    vc.imageURL = response.data?.first?.url ?? ""
+                    let vc = ImageColletionViewController()
+                    vc.imageData = response.data
                     self.navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let message = response.error?.message ?? ""
@@ -187,6 +187,9 @@ class ImageGenerationController: UIViewController {
     
     @objc func settingButtonTapped(){
         // open settings
+        let vc = SettingViewController(_viewModel: viewModel)
+        vc.navigationItem.title = "Settings"
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

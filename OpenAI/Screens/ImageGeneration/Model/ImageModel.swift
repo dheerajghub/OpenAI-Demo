@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Image Body
+
 struct ImageModelBody: Codable {
     let prompt: String
     let n: Int?
@@ -21,6 +23,9 @@ struct ImageModelBody: Codable {
     }
 }
 
+
+/// Image Response
+
 struct ImageModelResponse: Codable {
     let created: Double?
     let data: [ImageData]?
@@ -33,4 +38,13 @@ struct ImageData: Codable {
 
 struct ErrorData: Codable {
     let message: String?
+}
+
+
+/// Image Size Enum
+
+enum ImageSize: String {
+    case _256 = "256x256"
+    case _512 = "512x512"
+    case _1024 = "1024x1024"
 }

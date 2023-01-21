@@ -1,15 +1,15 @@
 //
-//  PreviewViewController.swift
+//  ImageCollectionViewCell.swift
 //  OpenAI
 //
-//  Created by Dheeraj Kumar Sharma on 14/01/23.
+//  Created by Dheeraj Kumar Sharma on 21/01/23.
 //
 
 import UIKit
 import Kingfisher
 
-class PreviewViewController: UIViewController {
-
+class ImageCollectionViewCell: UICollectionViewCell {
+    
     // MARK: PROPERTIES -
     
     var imageURL: String? {
@@ -33,24 +33,27 @@ class PreviewViewController: UIViewController {
         return imageView
     }()
     
-    
     // MARK: MAIN -
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setUpViews()
         setUpConstraints()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: FUNCTIONS -
     
     func setUpViews(){
-        view.backgroundColor = .black
-        view.addSubview(imageView)
+        backgroundColor = .clear
+        addSubview(imageView)
     }
     
     func setUpConstraints(){
-        imageView.pin(to: view)
+        imageView.pin(to: self)
     }
     
 }

@@ -31,6 +31,11 @@
 		44BF881A2973D6050021521E /* OpenAIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF88192973D6050021521E /* OpenAIWrapper.swift */; };
 		44BF881D2973E21F0021521E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF881C2973E21F0021521E /* HomeModel.swift */; };
 		44BF882129779C290021521E /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882029779C290021521E /* KeyConstant.swift */; };
+		44BF88242978F91E0021521E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF88232978F91E0021521E /* SettingViewController.swift */; };
+		44BF8828297A33130021521E /* SettingImageOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF8827297A33130021521E /* SettingImageOptionTableViewCell.swift */; };
+		44BF882A297BC23A0021521E /* SettingCounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF8829297BC23A0021521E /* SettingCounterTableViewCell.swift */; };
+		44BF882C297BF25A0021521E /* ImageColletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882B297BF25A0021521E /* ImageColletionViewController.swift */; };
+		44BF882E297BF7180021521E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */; };
 		8C01904BF1328EEA602F23E9 /* Pods_OpenAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE4A08B299CC475B836AE9E /* Pods_OpenAI.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,11 @@
 		44BF88192973D6050021521E /* OpenAIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIWrapper.swift; sourceTree = "<group>"; };
 		44BF881C2973E21F0021521E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		44BF882029779C290021521E /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
+		44BF88232978F91E0021521E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		44BF8827297A33130021521E /* SettingImageOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageOptionTableViewCell.swift; sourceTree = "<group>"; };
+		44BF8829297BC23A0021521E /* SettingCounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCounterTableViewCell.swift; sourceTree = "<group>"; };
+		44BF882B297BF25A0021521E /* ImageColletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageColletionViewController.swift; sourceTree = "<group>"; };
+		44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE9C334B0E93CD864A72D0ED /* Pods-OpenAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI.debug.xcconfig"; path = "Target Support Files/Pods-OpenAI/Pods-OpenAI.debug.xcconfig"; sourceTree = "<group>"; };
 		F43AE95D2DC14593F6EA3E8B /* Pods-OpenAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI.release.xcconfig"; path = "Target Support Files/Pods-OpenAI/Pods-OpenAI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,8 +165,8 @@
 		44BF87DF2972D35F0021521E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44BF88222978F9050021521E /* view */,
 				44BF87FB2973969F0021521E /* Controller */,
-				44BF87E02972D3730021521E /* CustomLoaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 			children = (
 				44BF87CB2972C8100021521E /* ImageGenerationController.swift */,
 				44BF87F52972EC290021521E /* PreviewViewController.swift */,
+				44BF88232978F91E0021521E /* SettingViewController.swift */,
+				44BF882B297BF25A0021521E /* ImageColletionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +274,17 @@
 				44BF881C2973E21F0021521E /* HomeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		44BF88222978F9050021521E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				44BF87E02972D3730021521E /* CustomLoaderView.swift */,
+				44BF8827297A33130021521E /* SettingImageOptionTableViewCell.swift */,
+				44BF8829297BC23A0021521E /* SettingCounterTableViewCell.swift */,
+				44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		8B99B15414D630E7AB6D9952 /* Pods */ = {
@@ -397,12 +420,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				44BF87FF2973970E0021521E /* ImageGenerationViewModel.swift in Sources */,
+				44BF882C297BF25A0021521E /* ImageColletionViewController.swift in Sources */,
+				44BF882E297BF7180021521E /* ImageCollectionViewCell.swift in Sources */,
+				44BF88242978F91E0021521E /* SettingViewController.swift in Sources */,
 				44BF87F9297395770021521E /* UIView+Extension.swift in Sources */,
 				44BF87E52972D8850021521E /* HttpUtility.swift in Sources */,
 				44BF88062973C6AD0021521E /* Alert.swift in Sources */,
 				44BF882129779C290021521E /* KeyConstant.swift in Sources */,
 				44BF87CC2972C8100021521E /* ImageGenerationController.swift in Sources */,
 				44BF87F22972E0C80021521E /* Constant.swift in Sources */,
+				44BF8828297A33130021521E /* SettingImageOptionTableViewCell.swift in Sources */,
 				44BF87F62972EC290021521E /* PreviewViewController.swift in Sources */,
 				44BF87ED2972DCEA0021521E /* Endpoint.swift in Sources */,
 				44BF881D2973E21F0021521E /* HomeModel.swift in Sources */,
@@ -417,6 +444,7 @@
 				44BF87CA2972C8100021521E /* SceneDelegate.swift in Sources */,
 				44BF87E82972DC1B0021521E /* ImageModel.swift in Sources */,
 				44BF88032973C50F0021521E /* UIButton+Extension.swift in Sources */,
+				44BF882A297BC23A0021521E /* SettingCounterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
