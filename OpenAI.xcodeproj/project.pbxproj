@@ -30,12 +30,14 @@
 		44BF88182973D5EF0021521E /* OpenAIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF88172973D5EF0021521E /* OpenAIConfiguration.swift */; };
 		44BF881A2973D6050021521E /* OpenAIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF88192973D6050021521E /* OpenAIWrapper.swift */; };
 		44BF881D2973E21F0021521E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF881C2973E21F0021521E /* HomeModel.swift */; };
-		44BF882129779C290021521E /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882029779C290021521E /* KeyConstant.swift */; };
 		44BF88242978F91E0021521E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF88232978F91E0021521E /* SettingViewController.swift */; };
 		44BF8828297A33130021521E /* SettingImageOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF8827297A33130021521E /* SettingImageOptionTableViewCell.swift */; };
 		44BF882A297BC23A0021521E /* SettingCounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF8829297BC23A0021521E /* SettingCounterTableViewCell.swift */; };
 		44BF882C297BF25A0021521E /* ImageColletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882B297BF25A0021521E /* ImageColletionViewController.swift */; };
 		44BF882E297BF7180021521E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */; };
+		44C2743F297FE3B8000AA7F5 /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2743E297FE3B8000AA7F5 /* KeyConstant.swift */; };
+		44C27447297FE5C3000AA7F5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C27446297FE5C3000AA7F5 /* ChatViewController.swift */; };
+		44C27449297FE735000AA7F5 /* CustomChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C27448297FE735000AA7F5 /* CustomChatMessageView.swift */; };
 		8C01904BF1328EEA602F23E9 /* Pods_OpenAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE4A08B299CC475B836AE9E /* Pods_OpenAI.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,12 +68,14 @@
 		44BF88172973D5EF0021521E /* OpenAIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIConfiguration.swift; sourceTree = "<group>"; };
 		44BF88192973D6050021521E /* OpenAIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIWrapper.swift; sourceTree = "<group>"; };
 		44BF881C2973E21F0021521E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		44BF882029779C290021521E /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
 		44BF88232978F91E0021521E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		44BF8827297A33130021521E /* SettingImageOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImageOptionTableViewCell.swift; sourceTree = "<group>"; };
 		44BF8829297BC23A0021521E /* SettingCounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCounterTableViewCell.swift; sourceTree = "<group>"; };
 		44BF882B297BF25A0021521E /* ImageColletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageColletionViewController.swift; sourceTree = "<group>"; };
 		44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		44C2743E297FE3B8000AA7F5 /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
+		44C27446297FE5C3000AA7F5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		44C27448297FE735000AA7F5 /* CustomChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatMessageView.swift; sourceTree = "<group>"; };
 		AE9C334B0E93CD864A72D0ED /* Pods-OpenAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI.debug.xcconfig"; path = "Target Support Files/Pods-OpenAI/Pods-OpenAI.debug.xcconfig"; sourceTree = "<group>"; };
 		F43AE95D2DC14593F6EA3E8B /* Pods-OpenAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI.release.xcconfig"; path = "Target Support Files/Pods-OpenAI/Pods-OpenAI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +119,7 @@
 				44BF87DD2972D0880021521E /* Resources */,
 				44BF87DC2972D0710021521E /* SupportingFiles */,
 				44BF88132973D4600021521E /* AppLaunchController.swift */,
-				44BF882029779C290021521E /* KeyConstant.swift */,
+				44C2743E297FE3B8000AA7F5 /* KeyConstant.swift */,
 			);
 			path = OpenAI;
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				44BF880C2973D3E30021521E /* Home */,
+				44C27440297FE536000AA7F5 /* TextCompletion */,
 				44BF87FD297396D70021521E /* ImageGeneration */,
 				44BF88192973D6050021521E /* OpenAIWrapper.swift */,
 			);
@@ -166,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				44BF88222978F9050021521E /* view */,
-				44BF87FB2973969F0021521E /* Controller */,
+				44BF87FB2973969F0021521E /* controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,7 +211,7 @@
 			path = other;
 			sourceTree = "<group>";
 		};
-		44BF87FB2973969F0021521E /* Controller */ = {
+		44BF87FB2973969F0021521E /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				44BF87CB2972C8100021521E /* ImageGenerationController.swift */,
@@ -214,7 +219,7 @@
 				44BF88232978F91E0021521E /* SettingViewController.swift */,
 				44BF882B297BF25A0021521E /* ImageColletionViewController.swift */,
 			);
-			path = Controller;
+			path = controller;
 			sourceTree = "<group>";
 		};
 		44BF87FC297396CF0021521E /* ViewModel */ = {
@@ -285,6 +290,55 @@
 				44BF882D297BF7180021521E /* ImageCollectionViewCell.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		44C27440297FE536000AA7F5 /* TextCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				44C27441297FE540000AA7F5 /* Model */,
+				44C27442297FE54A000AA7F5 /* View */,
+				44C27443297FE550000AA7F5 /* ViewModel */,
+			);
+			path = TextCompletion;
+			sourceTree = "<group>";
+		};
+		44C27441297FE540000AA7F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44C27442297FE54A000AA7F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44C27445297FE579000AA7F5 /* controller */,
+				44C27444297FE575000AA7F5 /* view */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44C27443297FE550000AA7F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44C27444297FE575000AA7F5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				44C27448297FE735000AA7F5 /* CustomChatMessageView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		44C27445297FE579000AA7F5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				44C27446297FE5C3000AA7F5 /* ChatViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		8B99B15414D630E7AB6D9952 /* Pods */ = {
@@ -426,7 +480,6 @@
 				44BF87F9297395770021521E /* UIView+Extension.swift in Sources */,
 				44BF87E52972D8850021521E /* HttpUtility.swift in Sources */,
 				44BF88062973C6AD0021521E /* Alert.swift in Sources */,
-				44BF882129779C290021521E /* KeyConstant.swift in Sources */,
 				44BF87CC2972C8100021521E /* ImageGenerationController.swift in Sources */,
 				44BF87F22972E0C80021521E /* Constant.swift in Sources */,
 				44BF8828297A33130021521E /* SettingImageOptionTableViewCell.swift in Sources */,
@@ -437,6 +490,7 @@
 				44BF87E32972D7950021521E /* Networking.swift in Sources */,
 				44BF88142973D4600021521E /* AppLaunchController.swift in Sources */,
 				44BF88182973D5EF0021521E /* OpenAIConfiguration.swift in Sources */,
+				44C27449297FE735000AA7F5 /* CustomChatMessageView.swift in Sources */,
 				44BF87C82972C8100021521E /* AppDelegate.swift in Sources */,
 				44BF881A2973D6050021521E /* OpenAIWrapper.swift in Sources */,
 				44BF88122973D40F0021521E /* HomeViewController.swift in Sources */,
@@ -445,6 +499,8 @@
 				44BF87E82972DC1B0021521E /* ImageModel.swift in Sources */,
 				44BF88032973C50F0021521E /* UIButton+Extension.swift in Sources */,
 				44BF882A297BC23A0021521E /* SettingCounterTableViewCell.swift in Sources */,
+				44C27447297FE5C3000AA7F5 /* ChatViewController.swift in Sources */,
+				44C2743F297FE3B8000AA7F5 /* KeyConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

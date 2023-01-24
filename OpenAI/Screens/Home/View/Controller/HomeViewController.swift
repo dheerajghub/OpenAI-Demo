@@ -98,6 +98,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(controller, animated: true)
             
         case .textCompletion:
+            
+            let controller = ChatViewController()
+            controller.title = "ChatController"
+            self.navigationController?.pushViewController(controller, animated: true)
+            
             break
         case .codeCompletion:
             break
