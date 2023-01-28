@@ -5,7 +5,7 @@
 //  Created by Dheeraj Kumar Sharma on 15/01/23.
 //
 
-import Foundation
+import UIKit
 
 class ImageGenerationViewModel {
     
@@ -13,6 +13,10 @@ class ImageGenerationViewModel {
     var numberOfImageToGenerate: Int = 1
     var selectedImageSizeIndex = 0
     var imageSize: ImageSize = ImageSize._256
+    
+    var generateButtonBottomConstraint: NSLayoutConstraint?
+    var textCardViewBottomConstraint: NSLayoutConstraint?
+    
     
     func getGenerateImageWithText(text: String ,completion: @escaping(ImageModelResponse) -> Void) {
     

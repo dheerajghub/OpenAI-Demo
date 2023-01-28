@@ -99,8 +99,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             
         case .textCompletion:
             
-            let controller = ChatViewController()
-            controller.title = "ChatController"
+            let controller = ChatViewController(_openAIWrapper: self.openAIWrapper)
+            controller.title = data.openAIsModelName
             self.navigationController?.pushViewController(controller, animated: true)
             
             break

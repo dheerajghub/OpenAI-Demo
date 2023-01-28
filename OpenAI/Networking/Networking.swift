@@ -39,4 +39,24 @@ public class Networking: NSObject {
         
     }
     
+    func textCompletion(text: String, completionHandler: @escaping(CompletionModelResponse) -> Void) {
+        
+        let completionURL = URL(string: Endpoint.completion)
+        let request = CompletionModelBody(prompt: text)
+        
+        do {
+            let encodeRequest = try JSONEncoder().encode(request)
+            httpUtility.postApiData(requestURL: completionURL!, requestBody: encodeRequest, resultType: CompletionModelResponse.self) { result in
+                
+                DispatchQueue.main.async {
+                    completionHandler(result)
+                }
+                
+            }
+        } catch let error {
+            debugPrint("error while encoding = \(error.localizedDescription)")
+        }
+        
+    }
+    
 }
