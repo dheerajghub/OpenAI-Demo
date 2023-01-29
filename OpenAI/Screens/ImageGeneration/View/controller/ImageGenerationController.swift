@@ -13,6 +13,8 @@ class ImageGenerationController: UIViewController {
     
     var openAIWrapper: OpenAIWrapper?
     let viewModel = ImageGenerationViewModel()
+    var generateButtonBottomConstraint: NSLayoutConstraint?
+    var textCardViewBottomConstraint: NSLayoutConstraint?
     
     let textCardView: UIView = {
         let view = UIView()
@@ -103,11 +105,11 @@ class ImageGenerationController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        viewModel.generateButtonBottomConstraint = NSLayoutConstraint(item: generateButton, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
-        view.addConstraint(viewModel.generateButtonBottomConstraint!)
+        generateButtonBottomConstraint = NSLayoutConstraint(item: generateButton, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
+        view.addConstraint(generateButtonBottomConstraint!)
         
-        viewModel.textCardViewBottomConstraint = NSLayoutConstraint(item: textCardView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
-        view.addConstraint(viewModel.textCardViewBottomConstraint!)
+        textCardViewBottomConstraint = NSLayoutConstraint(item: textCardView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
+        view.addConstraint(textCardViewBottomConstraint!)
     }
     
     func setUpConstraints(){
@@ -146,8 +148,8 @@ class ImageGenerationController: UIViewController {
             
             let isKeyboardShowing = notification.name == UIResponder.keyboardWillShowNotification
             
-            viewModel.textCardViewBottomConstraint?.constant = isKeyboardShowing ? -keyboardHeight : 0
-            viewModel.generateButtonBottomConstraint?.constant = isKeyboardShowing ? -(keyboardHeight + 10) : 0
+            textCardViewBottomConstraint?.constant = isKeyboardShowing ? -keyboardHeight : 0
+            generateButtonBottomConstraint?.constant = isKeyboardShowing ? -(keyboardHeight + 10) : 0
             
             UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut) {
                 self.view.layoutIfNeeded()

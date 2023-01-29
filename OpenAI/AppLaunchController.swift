@@ -24,7 +24,6 @@ class AppLaunchController: UIViewController {
         
         self.present(navVC, animated: false)
         
-        
     }
 
 }
