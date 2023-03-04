@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				44BF88222978F9050021521E /* view */,
-				44BF87FB2973969F0021521E /* controller */,
+				44BF87FB2973969F0021521E /* Controller */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			path = other;
 			sourceTree = "<group>";
 		};
-		44BF87FB2973969F0021521E /* controller */ = {
+		44BF87FB2973969F0021521E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				44BF87CB2972C8100021521E /* ImageGenerationController.swift */,
@@ -234,7 +234,7 @@
 				44BF88232978F91E0021521E /* SettingViewController.swift */,
 				44BF882B297BF25A0021521E /* ImageColletionViewController.swift */,
 			);
-			path = controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		44BF87FC297396CF0021521E /* ViewModel */ = {
