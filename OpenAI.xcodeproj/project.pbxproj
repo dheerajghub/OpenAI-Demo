@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4437B89E29864BB70072A7C8 /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437B89D29864BB70072A7C8 /* KeyConstant.swift */; };
 		443B198B2985038500F0A92A /* TextCompletionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B198A2985038500F0A92A /* TextCompletionModel.swift */; };
 		443B198D2985076300F0A92A /* messageLoader.json in Resources */ = {isa = PBXBuildFile; fileRef = 443B198C2985076300F0A92A /* messageLoader.json */; };
 		444D2EFD2985368F00E2CDF8 /* TextCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2EFC2985368F00E2CDF8 /* TextCompletionViewModel.swift */; };
 		444D2F0329855F4700E2CDF8 /* WaitingForResponseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2F0229855F4700E2CDF8 /* WaitingForResponseLoader.swift */; };
+		449DC33A29864D11008113D5 /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DC33929864D11008113D5 /* KeyConstant.swift */; };
 		44BF87C82972C8100021521E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87C72972C8100021521E /* AppDelegate.swift */; };
 		44BF87CA2972C8100021521E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87C92972C8100021521E /* SceneDelegate.swift */; };
 		44BF87CC2972C8100021521E /* ImageGenerationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87CB2972C8100021521E /* ImageGenerationController.swift */; };
@@ -50,11 +50,11 @@
 
 /* Begin PBXFileReference section */
 		0BE4A08B299CC475B836AE9E /* Pods_OpenAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4437B89D29864BB70072A7C8 /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
 		443B198A2985038500F0A92A /* TextCompletionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCompletionModel.swift; sourceTree = "<group>"; };
 		443B198C2985076300F0A92A /* messageLoader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messageLoader.json; sourceTree = "<group>"; };
 		444D2EFC2985368F00E2CDF8 /* TextCompletionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCompletionViewModel.swift; sourceTree = "<group>"; };
 		444D2F0229855F4700E2CDF8 /* WaitingForResponseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForResponseLoader.swift; sourceTree = "<group>"; };
+		449DC33929864D11008113D5 /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
 		44BF87C42972C8100021521E /* OpenAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BF87C72972C8100021521E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BF87C92972C8100021521E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				44BF87DD2972D0880021521E /* Resources */,
 				44BF87DC2972D0710021521E /* SupportingFiles */,
 				44BF88132973D4600021521E /* AppLaunchController.swift */,
-				4437B89D29864BB70072A7C8 /* KeyConstant.swift */,
+				449DC33929864D11008113D5 /* KeyConstant.swift */,
 			);
 			path = OpenAI;
 			sourceTree = "<group>";
@@ -526,7 +526,7 @@
 				44BF88032973C50F0021521E /* UIButton+Extension.swift in Sources */,
 				44BF882A297BC23A0021521E /* SettingCounterTableViewCell.swift in Sources */,
 				44BF883C2984F7EB0021521E /* YourTextTableViewCell.swift in Sources */,
-				4437B89E29864BB70072A7C8 /* KeyConstant.swift in Sources */,
+				449DC33A29864D11008113D5 /* KeyConstant.swift in Sources */,
 				44C27447297FE5C3000AA7F5 /* ChatViewController.swift in Sources */,
 				444D2EFD2985368F00E2CDF8 /* TextCompletionViewModel.swift in Sources */,
 			);
