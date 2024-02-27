@@ -37,4 +37,4 @@ class AppLaunchController: UIViewController {
 Just give it a star ⭐️ and spread the word!
 
 ## Credits
-**©** **Dheeraj kumar sharma** - *2023*
+**©** **Dheeraj kumar sharma** - *2024*
