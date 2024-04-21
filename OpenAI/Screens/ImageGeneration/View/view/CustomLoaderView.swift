@@ -48,7 +48,7 @@ class CustomLoaderView: UIView {
         setUpViews()
         setUpConstraints()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             self.setupanimation()
         }
         
@@ -109,8 +109,7 @@ class CustomLoaderView: UIView {
             view.removeFromSuperview()
         }
         
-        var animationView: LottieAnimationView?
-        animationView = .init(name: "laoder")
+        animationView = .init(name: "loader")
         animationView?.frame = self.loaderView.bounds
         animationView?.contentMode = .scaleAspectFit
         animationView?.loopMode = .loop

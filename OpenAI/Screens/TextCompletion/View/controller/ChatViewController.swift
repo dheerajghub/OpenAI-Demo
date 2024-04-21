@@ -31,6 +31,7 @@ class ChatViewController: UIViewController {
         tableView.register(YourTextTableViewCell.self, forCellReuseIdentifier: "YourTextTableViewCell")
         tableView.register(AIGeneratedTableViewCell.self, forCellReuseIdentifier: "AIGeneratedTableViewCell")
         tableView.separatorColor = .lightGray.withAlphaComponent(0.5)
+        tableView.backgroundColor = .clear
         return tableView
     }()
     

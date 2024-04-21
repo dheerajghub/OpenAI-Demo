@@ -28,6 +28,7 @@ class ImageGenerationController: UIViewController {
         textView.textAlignment = .center
         textView.delegate = self
         textView.text = "Type something.."
+        textView.backgroundColor = .clear
         return textView
     }()
     

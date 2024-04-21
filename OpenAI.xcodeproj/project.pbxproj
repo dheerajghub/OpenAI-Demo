@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		443B198B2985038500F0A92A /* TextCompletionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B198A2985038500F0A92A /* TextCompletionModel.swift */; };
-		443B198D2985076300F0A92A /* messageLoader.json in Resources */ = {isa = PBXBuildFile; fileRef = 443B198C2985076300F0A92A /* messageLoader.json */; };
 		444D2EFD2985368F00E2CDF8 /* TextCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2EFC2985368F00E2CDF8 /* TextCompletionViewModel.swift */; };
 		444D2F0329855F4700E2CDF8 /* WaitingForResponseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2F0229855F4700E2CDF8 /* WaitingForResponseLoader.swift */; };
 		44A820332BD4B07B00491779 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 44A820322BD4B07B00491779 /* Kingfisher */; };
 		44A820362BD4B0A500491779 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 44A820352BD4B0A500491779 /* Lottie */; };
 		44A820382BD4B3AE00491779 /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A820372BD4B3AE00491779 /* KeyConstant.swift */; };
+		44A8203B2BD4BFAD00491779 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 44A8203A2BD4BFAD00491779 /* netfox */; };
+		44A8203D2BD4C6F000491779 /* catLoader.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A8203C2BD4C6F000491779 /* catLoader.json */; };
 		44BF87C82972C8100021521E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87C72972C8100021521E /* AppDelegate.swift */; };
 		44BF87CA2972C8100021521E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87C92972C8100021521E /* SceneDelegate.swift */; };
 		44BF87CC2972C8100021521E /* ImageGenerationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF87CB2972C8100021521E /* ImageGenerationController.swift */; };
@@ -53,10 +54,10 @@
 /* Begin PBXFileReference section */
 		0BE4A08B299CC475B836AE9E /* Pods_OpenAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B198A2985038500F0A92A /* TextCompletionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCompletionModel.swift; sourceTree = "<group>"; };
-		443B198C2985076300F0A92A /* messageLoader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messageLoader.json; sourceTree = "<group>"; };
 		444D2EFC2985368F00E2CDF8 /* TextCompletionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCompletionViewModel.swift; sourceTree = "<group>"; };
 		444D2F0229855F4700E2CDF8 /* WaitingForResponseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForResponseLoader.swift; sourceTree = "<group>"; };
 		44A820372BD4B3AE00491779 /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
+		44A8203C2BD4C6F000491779 /* catLoader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catLoader.json; sourceTree = "<group>"; };
 		44BF87C42972C8100021521E /* OpenAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BF87C72972C8100021521E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BF87C92972C8100021521E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 			files = (
 				44A820332BD4B07B00491779 /* Kingfisher in Frameworks */,
 				8C01904BF1328EEA602F23E9 /* Pods_OpenAI.framework in Frameworks */,
+				44A8203B2BD4BFAD00491779 /* netfox in Frameworks */,
 				44A820362BD4B0A500491779 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				44BF880A2973D17C0021521E /* loader.json */,
-				443B198C2985076300F0A92A /* messageLoader.json */,
+				44A8203C2BD4C6F000491779 /* catLoader.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -403,6 +405,7 @@
 			packageProductDependencies = (
 				44A820322BD4B07B00491779 /* Kingfisher */,
 				44A820352BD4B0A500491779 /* Lottie */,
+				44A8203A2BD4BFAD00491779 /* netfox */,
 			);
 			productName = OpenAI;
 			productReference = 44BF87C42972C8100021521E /* OpenAI.app */;
@@ -435,6 +438,7 @@
 			packageReferences = (
 				44A820312BD4B07B00491779 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				44A820342BD4B0A500491779 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				44A820392BD4BFAD00491779 /* XCRemoteSwiftPackageReference "netfox" */,
 			);
 			productRefGroup = 44BF87C52972C8100021521E /* Products */;
 			projectDirPath = "";
@@ -451,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44BF880B2973D17C0021521E /* loader.json in Resources */,
-				443B198D2985076300F0A92A /* messageLoader.json in Resources */,
+				44A8203D2BD4C6F000491779 /* catLoader.json in Resources */,
 				44BF87D42972C8130021521E /* LaunchScreen.storyboard in Resources */,
 				44BF87D12972C8130021521E /* Assets.xcassets in Resources */,
 			);
@@ -750,6 +754,14 @@
 				minimumVersion = 4.4.3;
 			};
 		};
+		44A820392BD4BFAD00491779 /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.21.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -762,6 +774,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 44A820342BD4B0A500491779 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		44A8203A2BD4BFAD00491779 /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44A820392BD4BFAD00491779 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

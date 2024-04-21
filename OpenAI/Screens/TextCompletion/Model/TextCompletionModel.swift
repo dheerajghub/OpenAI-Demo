@@ -9,9 +9,9 @@ import Foundation
 
 // Completion Body
 
-struct CompletionModelBody: Codable {
+struct CompletionModelBody: Encodable {
     
-    let prompt: String
+    let messages: [PromptMessageModel]
     let model: String?
     let max_tokens: Int?
     let temperature: Double?
@@ -19,14 +19,14 @@ struct CompletionModelBody: Codable {
     let n: Int?
     let stream: Bool?
     
-    init(prompt: String,
-         model: String? = "text-davinci-003",
+    init(messages: [PromptMessageModel],
+         model: String? = "gpt-3.5-turbo",
          max_tokens: Int? = 100,
          temperature: Double? = 0,
          top_p: Int? = 1,
          n: Int? = 1,
          stream: Bool? = false) {
-        self.prompt = prompt
+        self.messages = messages
         self.model = model
         self.max_tokens = max_tokens
         self.temperature = temperature
@@ -35,6 +35,16 @@ struct CompletionModelBody: Codable {
         self.stream = stream
     }
     
+}
+
+struct PromptMessageModel: Codable {
+    let role: String
+    let content: String
+    
+    init(role: String, content: String) {
+        self.role = role
+        self.content = content
+    }
 }
 
 
@@ -51,7 +61,7 @@ struct CompletionModelResponse: Codable {
 }
 
 struct CompletionChoices: Codable {
-    let text: String?
+    let message: PromptMessageModel?
     let index: Int?
     let finish_reason: String?
 }

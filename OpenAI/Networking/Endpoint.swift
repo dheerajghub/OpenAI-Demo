@@ -10,7 +10,7 @@ import Foundation
 struct Endpoint {
     
     // Image Generation
-    static let createImage = "\(Constant.baseURL)images/generations"
-    static let completion = "\(Constant.baseURL)completions"
+    static let createImage = "\(Constant.baseURL)/images/generations"
+    static let completion = "\(Constant.baseURL)/chat/completions"
     
 }

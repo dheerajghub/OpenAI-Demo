@@ -24,10 +24,14 @@ class AIGeneratedTableViewCell: UITableViewCell {
             AITextLabel.text = messageData.message
             if messageData.isLoading {
                 loaderView.isHidden = false
+                AILoaderProfileView.isHidden = false
+                AIProfileView.isHidden = true
                 guard let animationView else { return }
                 animationView.play()
             } else {
                 loaderView.isHidden = true
+                AILoaderProfileView.isHidden = true
+                AIProfileView.isHidden = false
                 guard let animationView else { return }
                 animationView.stop()
             }
@@ -42,6 +46,16 @@ class AIGeneratedTableViewCell: UITableViewCell {
         imageView.layer.cornerRadius = 17.5
         imageView.image = UIImage(named: "ic_openAI")
         imageView.clipsToBounds = true
+        return imageView
+    }()
+    
+    let AILoaderProfileView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.cornerRadius = 12
+        imageView.image = UIImage(named: "ic_openAI")
+        imageView.clipsToBounds = true
+        imageView.isHidden = true
         return imageView
     }()
     
@@ -79,6 +93,7 @@ class AIGeneratedTableViewCell: UITableViewCell {
         backgroundColor = .black
         clipsToBounds = true
         addSubview(AIProfileView)
+        addSubview(AILoaderProfileView)
         addSubview(AITextLabel)
         addSubview(loaderView)
     }
@@ -95,8 +110,15 @@ class AIGeneratedTableViewCell: UITableViewCell {
             AIProfileView.widthAnchor.constraint(equalToConstant: 35),
             AIProfileView.heightAnchor.constraint(equalToConstant: 35),
             
-            loaderView.leadingAnchor.constraint(equalTo: AIProfileView.trailingAnchor, constant: -20),
+            AILoaderProfileView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 18),
+            AILoaderProfileView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            AILoaderProfileView.widthAnchor.constraint(equalToConstant: 24),
+            AILoaderProfileView.heightAnchor.constraint(equalToConstant: 24),
+            
+            loaderView.leadingAnchor.constraint(equalTo: leadingAnchor),
             loaderView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            loaderView.heightAnchor.constraint(equalToConstant: 60),
+            loaderView.widthAnchor.constraint(equalToConstant: 60)
         ])
     }
     
@@ -107,8 +129,7 @@ class AIGeneratedTableViewCell: UITableViewCell {
             view.removeFromSuperview()
         }
         
-        var animationView: LottieAnimationView?
-        animationView = .init(name: "messageLoader")
+        animationView = .init(name: "catLoader")
         animationView?.frame = self.loaderView.bounds
         animationView?.contentMode = .scaleAspectFit
         animationView?.loopMode = .loop

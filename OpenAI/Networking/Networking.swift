@@ -42,7 +42,12 @@ public class Networking: NSObject {
     func textCompletion(text: String, completionHandler: @escaping(CompletionModelResponse) -> Void) {
         
         let completionURL = URL(string: Endpoint.completion)
-        let request = CompletionModelBody(prompt: text)
+        
+        let messages = [
+            PromptMessageModel(role: "system", content: "You are an assitant of the app named openAI demo, and you will assist users only within the scope of tech"),
+            PromptMessageModel(role: "user", content: "\(text)"),
+        ]
+        let request = CompletionModelBody(messages: messages)
         
         do {
             let encodeRequest = try JSONEncoder().encode(request)

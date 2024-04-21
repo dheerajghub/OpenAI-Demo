@@ -23,7 +23,11 @@ class TextCompletionViewModel {
             
             if response.error == nil {
                 
-                var aiMessage = response.choices?[0].text ?? ""
+                guard let choices = response.choices
+                else { return }
+                
+                let firstChoice = choices[0]
+                var aiMessage = firstChoice.message?.content ?? ""
                 aiMessage = aiMessage.replacingOccurrences(of: "\n", with: "")
                 
                 let aiResponse = CustomChatModel(message: aiMessage, isAI: true, isLoading: false)
